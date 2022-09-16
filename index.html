@@ -20,7 +20,7 @@
 
     <!-- awal navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top  shadow-sm ">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top  shadow-sm ">
       <div class="container">
         <a class="navbar-brand" href="#">My Bagas</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +39,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#galery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#keybord">Keyboaard</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#contact">Contact</a>
@@ -219,6 +222,46 @@
 
     <!-- akhir galery img -->
 
+    <!-- awal keybord -->
+
+    <section class="keybord" id="keybord">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h3>Keybord Me</h3>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="kotak-keybord">
+              <h4 class="keyboard-name">Alphabetic</h4>
+              <img src="img/efek3D/g1.png" alt="" class="gbr-keyboard">
+              <a href="" class="btn btn-light keybord-tombol">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="kotak-keybord">
+              <h4 class="keyboard-name">Dvorak</h4>
+              <img src="img/efek3D/g2.png" alt="" class="gbr-keyboard">
+              <a href="" class="btn btn-light keybord-tombol">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="kotak-keybord">
+              <h4 class="keyboard-name"> Maltorn</h4>
+              <img src="img/efek3D/g3.png" alt="" class="gbr-keyboard">
+              <a href="" class="btn btn-light keybord-tombol">Show Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,192L21.8,202.7C43.6,213,87,235,131,218.7C174.5,203,218,149,262,117.3C305.5,85,349,75,393,69.3C436.4,64,480,64,524,96C567.3,128,611,192,655,202.7C698.2,213,742,171,785,165.3C829.1,160,873,192,916,218.7C960,245,1004,267,1047,272C1090.9,277,1135,267,1178,224C1221.8,181,1265,107,1309,96C1352.7,85,1396,139,1418,165.3L1440,192L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path></svg>
+
+    <!-- akhir keybord -->
+
     <!-- awal contact -->
 
     <section id="contact" class="contact">
@@ -326,12 +369,22 @@
       gsap.to(".p-jumbotron", {duration: 4, text: "Programing | Desaigner | Content Creator", delay:1.5})
     </script>
 
-    
-
     <!-- akhir script Gsap -->
 
+    <!-- awal script efeck 3D -->
 
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".kotak-keybord"), {
+        max: 60,
+        speed: 3000,
+        glare:true,
+      });
+      
+      
+    </script>
 
+    <!-- akhir script efeck 3D -->
 
 
 
